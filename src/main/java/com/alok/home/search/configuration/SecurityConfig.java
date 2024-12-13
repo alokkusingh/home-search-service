@@ -25,7 +25,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/actuator", "/actuator/**").permitAll();
 
-                    auth.requestMatchers("/search", "/search/**").hasAnyRole("ADMIN", "USER", "home_api_ro", "home_api_rw", "LOCALHOST");
+                    auth.requestMatchers("/transactions", "/transactions/**").hasAnyRole("ADMIN", "USER", "home_api_ro", "home_api_rw", "LOCALHOST");
 
                     auth.anyRequest().authenticated();
                 })

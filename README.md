@@ -34,5 +34,5 @@ java -jar target/home-search-service-1.0.0.jar
    ```
 ### Test
 ```shell
-curl -X GET http://localhost:8081/home/serach/transactions?description=avinash
+curl -X GET http://localhost:8081/home/search/transactions?description=avinash
 ```
